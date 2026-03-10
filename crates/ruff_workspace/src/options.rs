@@ -78,7 +78,7 @@ pub struct Options {
     /// the parent's rule selection is inherited and both parent and child
     /// `lint.ignore` rules are accumulated together.
     #[option(
-        default = r#"null"#,
+        default = r#"@ROOT_CONFIG@"#,
         value_type = "str",
         example = r#"
             # Extend the `pyproject.toml` file in the parent directory.
